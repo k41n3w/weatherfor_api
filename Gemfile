@@ -30,9 +30,12 @@ gem 'rack-cors'
 # Document API and make a endpoint to consulting test
 gem 'rswag'
 
-group :development, :test do
+group :production, :development, :test do
   # Test Suite
   gem 'rspec-rails', '~> 5.0.0'
+end
+
+group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
