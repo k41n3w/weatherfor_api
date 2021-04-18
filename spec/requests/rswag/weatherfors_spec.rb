@@ -2,7 +2,7 @@
 
 require 'swagger_helper'
 
-describe 'User' do
+describe 'Weatherfors' do
   path '/weatherfors/weather_in_days' do
     get 'Busca informações metereologicas atual e média para próximos 5 dias' do
       tags 'weatherfors'
