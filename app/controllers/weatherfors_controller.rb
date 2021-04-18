@@ -1,22 +1,19 @@
 # frozen_string_literal: true
 
 class WeatherforsController < ApplicationController
-  def weather_in_days
-    gem_text = Weatherfor::ApiConsultant.new('Caconde', '09b0fa85cf2627ed64bb823a7e79d5bb').weather_in_days
+  def post_weather_on_twitter
+    TweetCreator.new(avg_temp_text).send_tweet
 
-    render json: { message: gem_text }, status: :ok
+    render json: { message: 'Posted' }, status: :created
   end
 
-  def post_weather_in_days
-    client = Twitter::REST::Client.new do |config|
-      config.consumer_key        = Rails.application.credentials[:CONSUMER_KEY]
-      config.consumer_secret     = Rails.application.credentials[:CONSUMER_SECRECT]
-      config.access_token        = Rails.application.credentials[:ACCESS_TOKEN]
-      config.access_token_secret = Rails.application.credentials[:ACCESS_TOKEN_SECRET]
-    end
+  private
 
-    client.update(Weatherfor::ApiConsultant.new('Caconde', '09b0fa85cf2627ed64bb823a7e79d5bb').weather_in_days)
+  def post_params
+    params.require(:post).permit(:city_name, :api_key)
+  end
 
-    render json: { message: 'Posted' }, status: :ok
+  def avg_temp_text
+    Weatherfor::ApiConsultant.new(post_params['city_name'], post_params['api_key']).weather_in_days
   end
 end

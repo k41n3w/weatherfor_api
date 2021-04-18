@@ -3,9 +3,16 @@
 require 'rails_helper'
 
 RSpec.describe 'Weatherfors', type: :request do
-  describe 'GET /weather_in_days' do
+  describe 'Post /post_weather_on_twitter' do
     it 'returns http success' do
-      get '/weatherfors/weather_in_days'
+      params = {
+        post: {
+          city_name: 'Caconde',
+          api_key: Rails.application.credentials[:WEATHER_API_KEY]
+        }
+      }
+
+      post '/weatherfors/post_weather_on_twitter', params: params
 
       expect(response).to have_http_status(:success)
     end
