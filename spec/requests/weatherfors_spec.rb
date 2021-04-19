@@ -14,7 +14,7 @@ RSpec.describe 'Weatherfors', type: :request do
 
       post '/weatherfors/post_weather_on_twitter', params: params
 
-      expect(response).to have_http_status(:success)
+      expect(response).to have_http_status(:created)
     end
   end
 end

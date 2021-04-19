@@ -14,6 +14,9 @@ class WeatherforsController < ApplicationController
   end
 
   def avg_temp_text
-    Weatherfor::ApiConsultant.new(post_params['city_name'], post_params['api_key']).weather_in_days
+    city    = I18n.transliterate(post_params['city_name'])
+    api_key = post_params['api_key']
+
+    Weatherfor::ApiConsultant.new(city, api_key).weather_in_days
   end
 end
