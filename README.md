@@ -1,24 +1,40 @@
-# README
+# Weatherfor
+[![Build & Tests](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml/badge.svg)](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Api that's use weatherfor gem to check the average weather forecast for the next five days.
 
-Things you may want to cover:
+--> [Link da documentação no Heroku](https://weatherfor5.herokuapp.com/api-docs/index.html) <--
 
-* Ruby version
+### After clone the project
+To build locale type:
 
-* System dependencies
+```bash
+$ docker-compose build
+```
 
-* Configuration
+To up the service type:
+```bash
+$ docker-compose up --build
+```
 
-* Database creation
+To enter in the web container type:
+```bash
+$ docker exec -it weatherfor_api_web_1 bash
+```
 
-* Database initialization
+To run rubocop, inside the container type:
+```bash
+$ rubocop
+```
 
-* How to run the test suite
+To run Rspec, inside the container type:
+```bash
+$ rspec
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+To run Rswag locale, inside the container type:
+```bash
+$ rails rswag
+```
 
-* Deployment instructions
-
-* ...
+If everything it's ok, after you startup the project you'll see the rswag documentation page at: http://0.0.0.0//api-docs/index.html
