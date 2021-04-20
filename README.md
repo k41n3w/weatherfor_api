@@ -1,9 +1,11 @@
 # Weatherfor
 [![Build & Tests](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml/badge.svg)](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml)
 
-Api that's use weatherfor gem to check the average weather forecast for the next five days.
+Api that's use weatherfor gem to check the average weather forecast for the next five days and post to Twitter.
 
---> [Link da documentação no Heroku](https://weatherfor5.herokuapp.com/api-docs/index.html) <--
+--> [Documentation Link to Heroku](https://weatherfor5.herokuapp.com/api-docs/index.html) <--
+
+--> [Twitter Link](https://twitter.com/CaioRam51024555) <--
 
 ### After clone the project
 To build locale type:
