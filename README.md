@@ -1,5 +1,5 @@
 # Weatherfor
-[![Build & Tests](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml/badge.svg)](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml) [![codecov](https://codecov.io/gh/k41n3w/weatherfor_api/branch/main/graph/badge.svg)](https://codecov.io/gh/k41n3w/weatherfor_api)
+[![Build & Tests](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml/badge.svg)](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml) [![codecov](https://codecov.io/gh/k41n3w/weatherfor_api/branch/main/graph/badge.svg)](https://codecov.io/gh/k41n3w/weatherfor_api)  <a href="https://codeclimate.com/github/k41n3w/weatherfor_api/maintainability"><img src="https://api.codeclimate.com/v1/badges/12a06abe7ea2caefc470/maintainability" /></a>
 
 Api that's use weatherfor gem to check the average weather forecast for the next five days and post to Twitter.
 
