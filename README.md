@@ -1,4 +1,4 @@
-# Weatherfor
+# Weatherfor API
 [![Build & Tests](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml/badge.svg)](https://github.com/k41n3w/weatherfor_api/actions/workflows/ruby.yml) [![codecov](https://codecov.io/gh/k41n3w/weatherfor_api/branch/main/graph/badge.svg)](https://codecov.io/gh/k41n3w/weatherfor_api)
 
 Api that's use weatherfor gem to check the average weather forecast for the next five days and post to Twitter.
