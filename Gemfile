@@ -34,7 +34,7 @@ gem 'rswag'
 gem 'twitter'
 
 # Best gem in the world
-gem 'weatherfor', '~> 0.2.0'
+gem 'weatherfor', '~> 0.2.3'
 
 group :production, :development, :test do
   # Test Suite
