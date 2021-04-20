@@ -6,35 +6,48 @@ Api that's use weatherfor gem to check the average weather forecast for the next
 --> [Link da documentação no Heroku](https://weatherfor5.herokuapp.com/api-docs/index.html) <--
 
 ### After clone the project
-To build locale type:
+To build localy, the command is:
 
 ```bash
 $ docker-compose build
 ```
 
-To up the service type:
+To up the service, the command is:
 ```bash
 $ docker-compose up --build
 ```
 
-To enter in the web container type:
+To enter in the web container, the command is:
 ```bash
 $ docker exec -it weatherfor_api_web_1 bash
 ```
 
-To run rubocop, inside the container type:
+To use the service regenerate credentials file.
+
+To connect with Twitter API and codecov test badge,
+you'll need to add the follow enviroment variables:
+
+```bash
+CONSUMER_KEY
+CONSUMER_SECRET
+ACCESS_TOKEN
+ACCESS_TOKEN_SECRET
+CODECOV_TOKEN
+```
+
+To run rubocop, inside the container, the command is:
 ```bash
 $ rubocop
 ```
 
-To run Rspec, inside the container type:
+To run Rspec, inside the container, the command is:
 ```bash
 $ rspec
 ```
 
-To run Rswag locale, inside the container type:
+To run Rswag locale, inside the container, the command is:
 ```bash
 $ rails rswag
 ```
 
-If everything it's ok, after you startup the project you'll see the rswag documentation page at: http://0.0.0.0//api-docs/index.html
+If everything's ok, after you startup the project you'll see the rswag documentation page at: http://0.0.0.0//api-docs/index.html

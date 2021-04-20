@@ -42,6 +42,7 @@ group :production, :development, :test do
 end
 
 group :development, :test do
+  gem 'codecov', require: false
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
